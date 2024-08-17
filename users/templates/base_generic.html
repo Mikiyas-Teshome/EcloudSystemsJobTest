@@ -1,0 +1,21 @@
+<!-- users/templates/base_generic.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}My User App{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>My User App</h1>
+        <nav>
+            <a href="{% url 'user_list' %}">Home</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>© 2024 My User App</p>
+    </footer>
+</body>
+</html>
